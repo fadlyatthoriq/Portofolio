@@ -1,0 +1,20 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+#profil {
+    background-color: #778ca3;
+}
+#galleri{
+    background-color: #778ca3;
+}
+.paragraph {
+    letter-spacing: 1px;
+}
+footer {
+    background-color: #778ca3;
+    height: 50px;
+}
+.card {
+    background-color: rgb(230, 230, 230);
+}
