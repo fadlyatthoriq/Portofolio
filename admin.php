@@ -54,6 +54,7 @@
                 
                 }
             ?>
+            <a href="formeditprofil.php"><button type="button" class="btn btn-outline-dark btn-sm" name="editprofil" value="editprofil">Edit >></button></a>
         </div>
       </div>
     </section>
