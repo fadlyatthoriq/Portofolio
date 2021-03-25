@@ -1,0 +1,12 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+nav {
+    background-color: #778ca3;
+}
+.editprfl{
+    text-align: center;
+    background-color: #778ca3;
+    border-radius: 5px;
+}

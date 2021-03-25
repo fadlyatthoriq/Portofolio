@@ -18,7 +18,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #778ca3;">
         <div class="container pt-1 pb-1">
-          <a class="navbar-brand" href="#">Fadly Atthoriq</a>
+          <a class="navbar-brand" href="admin.php">Fadly Atthoriq</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

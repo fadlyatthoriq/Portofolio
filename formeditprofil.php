@@ -22,28 +22,20 @@ if( mysqli_num_rows($query) < 1 ){
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/formeditprofil.css">
 
     <title>Edit Data</title>
-    <style>
-        body {
-            background-color: rgb(235, 235, 235);
-        }
-        nav {
-            background-color: rgb(64, 70, 124);
-        }
-
-    </style>
   </head>
   <body>
       <!-- nav -->
-    <nav class="navbar navbar-light mb-2">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
-            <span class="navbar-brand fs-6 ms-3 text-center p-2 sticky-top text-white">Fadly Atthoriq</span>
-            <a href="admin.php"><button class="btn shadow btn-sm btn-outline-primary position-absolute top-50 end-0 translate-middle-y text-white me-4">< Back to Admin </button></a>
+            <a class="navbar-brand fs-6 ms-3 p-2">Fadly Atthoriq</a>
+            <a href="admin.php"><button class="btn shadow btn-sm btn-outline-dark position-absolute top-50 end-0 translate-middle-y me-4">< Back to Admin </button></a>
         </div>
     </nav>
     <div class="container bg-light border border-2 shadow position-absolute top-50 start-50 translate-middle p-4 rounded">
-        <h3 class="p-2 text-white" style="text-align: center;background-color: rgb(64, 70, 124);border-radius: 5px;">Edit Data</h3>
+        <h4 class="p-2 editprfl">Edit Profil</h4>
         <form action="editprofil.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $prfl['id']?>"/>
                 <div class="form-group">

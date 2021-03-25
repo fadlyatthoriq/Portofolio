@@ -17,7 +17,7 @@
     <style>
         body {
             overflow: hidden;
-            background-color: rgb(235, 235, 235);
+            background-color: rgb(230,230,230);
         }
         .dd{
             background-color: red;
@@ -27,11 +27,11 @@
             text-align: center;
         }
         nav {
-            background-color: rgb(64, 70, 124);
+            background-color: #778ca3;
         }
         .button:hover{
-            background-color: rgb(64, 70, 124);
-            color: white;
+            background-color: #778ca3;
+            color: black;
         }
     </style>
   </head>
@@ -39,13 +39,13 @@
     <!-- nav -->
     <nav class="navbar navbar-light mb-2">
         <div class="container-fluid">
-            <span class="navbar-brand fs-6 ms-3 text-center p-2 sticky-top text-white">Fadly Atthoriq</span>
-            <a href="admin.php"><button class="btn shadow btn-sm btn-outline-primary position-absolute top-50 end-0 translate-middle-y text-white me-4">Back To Admin</button></a>
+            <span class="navbar-brand fs-6 ms-3 text-center p-2 sticky-top">Fadly Atthoriq</span>
+            <a href="admin.php"><button class="btn shadow btn-sm btn-outline-dark position-absolute top-50 end-0 translate-middle-y me-4">Back To Admin</button></a>
         </div>
     </nav>
 
     <div class="container">
-        <h3 class="fs-5 text-white text-center p-1 m-1" style="border-radius: 5px; background-color: rgb(64, 70, 124);">List Item</h3>
+        <h3 class="fs-5 text-center p-1 m-1" style="border-radius: 5px; background-color: #778ca3;">List Item</h3>
         <a href="formaddgaleri.html"><button class="btn button" style="border-radius: 5px;width: 80%; margin-left: 110px;border-color: rgb(64, 70, 124);">Tambah Baru</button></a>
         <div class="card m-1" style="height: 510px;overflow: scroll;">
             <table class ="table table-hover">
@@ -53,6 +53,7 @@
                     <th>No</th>
                     <th>Gambar Galeri</th>
                     <th>Teks Galeri</th>
+                    <th>Modify</th>
                 </tr>
         
         
