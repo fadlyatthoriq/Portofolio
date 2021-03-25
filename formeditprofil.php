@@ -1,5 +1,16 @@
 <?php
-    include "koneksi.php";
+include 'koneksi.php';
+
+    $idprofil = $_GET['id'];
+    $sql = "SELECT * FROM profil WHERE id='$idprofil'";
+    $query = mysqli_query($connect, $sql);
+    $prfl = mysqli_fetch_assoc($query);
+
+
+if( mysqli_num_rows($query) < 1 ){
+    die("data tidak ditemukan...");
+}
+
 ?>
 
 <!doctype html>
@@ -34,18 +45,18 @@
     <div class="container bg-light border border-2 shadow position-absolute top-50 start-50 translate-middle p-4 rounded">
         <h3 class="p-2 text-white" style="text-align: center;background-color: rgb(64, 70, 124);border-radius: 5px;">Edit Data</h3>
         <form action="editprofil.php" method="POST">
-            <input type="hidden" name="id" value="<?php echo $profil['idprofil']?>"/>
+            <input type="hidden" name="id" value="<?php echo $prfl['id']?>"/>
                 <div class="form-group">
                     <label for="namaprofil">Nama Profil</label>
-                    <input type="text" class="form-control" name="namaprofil" value="<?php echo $profil['namaprofil']?>"/>
+                    <input type="text" class="form-control" name="namaprofil" value="<?php echo $prfl['namaprofil']?>"/>
                        </div>
                 <div class="form-group">
                     <label for="gambarprofil">Foto Profil</label>
-                       <input type="url" class="form-control" name="gambarprofil" value="<?php echo $profil['gambarprofil']?>"/>
+                       <input type="url" class="form-control" name="gambarprofil" value="<?php echo $prfl['gambarprofil']?>"/>
                        </div>
                 <div class="form-group">
                         <label for="teksprofil">Teks Dibawah Profil</label>
-                        <input type="text" class="form-control" name="teksprofil" value="<?php echo $profil['teksprofil']?>"/>
+                        <input type="text" class="form-control" name="teksprofil" value="<?php echo $prfl['teksprofil']?>"/>
                     </div>
                 <button class="btn btn-outline-primary mt-2" name="edit" value="simpan">Simpan</button>
          </form>

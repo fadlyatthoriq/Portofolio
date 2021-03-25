@@ -51,10 +51,10 @@
                     echo '<img src="'.$prfl['gambarprofil'].'" alt="gambar" class="rounded-circle img-thumbnail shadow-sm mt-2" width="20%" height="220px">';
                     echo '<h3 class="mt-3 mb-1 fw-bold fs-3">'.$prfl['namaprofil'].'</h3>';
                     echo '<p>'.$prfl['teksprofil'].'</p>';
+                    echo "<a href='formeditprofil.php?id=".$prfl['id']."'><button class='btn-sm btn btn-outline-dark'>Edit</button></a>";
                 
                 }
             ?>
-            <a href="formeditprofil.php"><button type="button" class="btn btn-outline-dark btn-sm" name="editprofil" value="editprofil">Edit >></button></a>
         </div>
       </div>
     </section>
@@ -98,6 +98,7 @@
                     echo '</div>';;
                 }
         ?>
+        <a href="tabelgaleri.php" class="btn btn-outline-dark btn-sm mt-4 me-3 ms-3">Edit Galeri >></a>
         </div>
       </div>
     </section>  
