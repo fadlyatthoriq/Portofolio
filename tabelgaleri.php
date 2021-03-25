@@ -73,8 +73,8 @@
                     echo "<td>".$tblp['teksgaleri']."</td>";
                     echo "<td>";
                     // echo "<button type='button' class='btn btn-sm btn-outline-warning' data-bs-toggle='modal' data-bs-target='#exampleModal'>Edit</button>";
-                    echo "<a href='formeditgaleri.php?id=".$tblp['idgaleri']."'><button class='btn-sm btn btn-outline-warning me-1'>Edit</button></a>";
-                    echo "<a href='hapusgaleri.php?id=".$tblp['idgaleri']."'><button class='btn-sm btn btn-outline-danger ms-1'>Hapus</button></a>";
+                    echo "<a href='formeditgaleri.php?id=".$tblp['id']."'><button class='btn-sm btn btn-outline-warning me-1'>Edit</button></a>";
+                    echo "<a href='hapusgaleri.php?id=".$tblp['id']."'><button class='btn-sm btn btn-outline-danger ms-1'>Hapus</button></a>";
                     echo "</td>";
                     echo "</tr>";
                 }

@@ -98,7 +98,7 @@
                     echo '</div>';;
                 }
         ?>
-        <a href="tabelgaleri.php" class="btn btn-outline-dark btn-sm mt-4 me-3 ms-3">Edit Galeri >></a>
+        <a href="tabelgaleri.php" class="btn btn-outline-dark btn-sm mt-4 me-3 ms-3">Edit Galeri</a>
         </div>
       </div>
     </section>  
@@ -108,8 +108,8 @@
     <br id="contact">
     <section >
         <div class="container">
-          <h3 class="text-center fw-bold fs-3">Contact Me</h3>
-          <div class="row">
+          <h3 class="text-center fw-bold mb-2 fs-3">List Contact</h3>
+          <!-- <div class="row">
             <div class="col-2"></div>
             <div class="col align-self-start">
             <form action="simpancontact.php" method="POST">
@@ -129,7 +129,29 @@
             </form>
             </div>
             <div class="col-2"></div>
-          </div>
+          </div> -->
+
+          <?php
+            $sql = "SELECT * FROM comment";
+            $query = mysqli_query($connect,$sql);
+
+            while ($c = mysqli_fetch_array($query)) {
+              echo '<div class="list-group">';
+                echo '<div class="list-group-item list-group-item-action disable" aria-current="true">';
+                echo '<div class="d-flex w-100 justify-content-between">';
+                echo '<h5 class="mb-1 bold"><strong>'.$c['namacomment'].'</strong></h5>';
+                echo '<a href="hapuscontact.php?id='.$c['id'].'" class="btn btn-outline-danger btn-sm"><small>Hapus</small></a>';
+                echo '</div>';
+                echo '<p class="mb-1">'.$c['comment'].'</p>';
+                echo '<small>'.$c['emailcomment'].'</small>';
+                echo '</div>';
+              echo '</div>';
+
+
+
+            }
+
+          ?>
         </div>
     </section>
 

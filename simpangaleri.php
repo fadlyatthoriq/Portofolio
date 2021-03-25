@@ -2,12 +2,12 @@
 include 'koneksi.php';
 
 if(isset($_POST['simpan'])) {
-$idgaleri = $_POST['idgaleri'];
+$idgaleri = $_POST['id'];
 $gambargaleri = $_POST['gambargaleri'];
 $teksgaleri = $_POST['teksgaleri'];
 
 
-$sql = "INSERT INTO galeri (idgaleri,gambargaleri,teksgaleri) VALUES ('$idgaleri','$gambargaleri','$teksgaleri')";
+$sql = "INSERT INTO galeri (id,gambargaleri,teksgaleri) VALUES ('$idgaleri','$gambargaleri','$teksgaleri')";
 $query = mysqli_query($connect, $sql);
 
 if ($query) {
