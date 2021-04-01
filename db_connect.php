@@ -1,9 +1,9 @@
 <?php 
 class database{
-	var $host = "localhost";
-	var $username = "root";
-	var $password = "";
-	var $database = "portofolio";
+	var $host = "sql213.epizy.com";
+	var $username = "epiz_28282728";
+	var $password = "dh2x9cQ3YBLEkL";
+	var $database = "epiz_28282728_portofolio";
 	var $koneksi;
 
 	function __construct(){
