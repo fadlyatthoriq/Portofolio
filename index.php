@@ -21,6 +21,7 @@
         <div class="container pt-1 pb-1">
           <a class="navbar-brand" href="#">Fadly Atthoriq</a>
           <a href="login.php" class="btn btn-outline-dark btn-sm">Admin</a>
+          <a href="cetak.php" target = "blank" class="btn btn-outline-dark btn-sm ms-2">Cetak</a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item me-3">

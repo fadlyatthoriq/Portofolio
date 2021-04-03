@@ -20,6 +20,7 @@
         <div class="container pt-1 pb-1">
           <a class="navbar-brand" href="admin.php">Fadly Atthoriq</a>
           <a href="logout.php" class="btn btn-outline-dark">Logout</a>
+          <a href="cetak.php" class="btn btn-outline-dark ms-2" target = "_blank">Print</a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item me-3">
@@ -107,27 +108,6 @@
     <section >
         <div class="container">
           <h3 class="text-center fw-bold mb-2 fs-3">List Contact</h3>
-          <!-- <div class="row">
-            <div class="col-2"></div>
-            <div class="col align-self-start">
-            <form action="simpancontact.php" method="POST">
-                    <div class="form-group mb-3">
-                        <label for="namacomment">Your Name</label>
-                        <input type="text" class="form-control" name="namacomment" placeholder="Your Name">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="emailcomment">Email</label>
-                        <input type="email" class="form-control" name="emailcomment" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="comment">Your Comment</label>
-                        <textarea name="comment" id="comment" class="form-control" rows="3"></textarea>
-                    </div>
-                <button class="btn btn-primary" name="simpan" value="simpan">Submit</button>
-            </form>
-            </div>
-            <div class="col-2"></div>
-          </div> -->
 
           <?php
             $sql = "SELECT * FROM comment";
